@@ -140,3 +140,89 @@ section {
   font-size: 0.85rem;
   color: #888;
 }
+/* CSS Changes */
+section {
+  border-top: 3px solid #16213e; 
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(22, 33, 62, 0.08);
+}
+
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.accordion-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 14px rgba(22, 33, 62, 0.12);
+}
+
+.accordion-trigger {
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.accordion-item.open .accordion-trigger {
+  background: #16213e;
+  color: white;
+}
+
+#tag-input {
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tag-input:focus {
+  border-color: #16213e;
+  box-shadow: 0 0 0 3px rgba(22, 33, 62, 0.15);
+  outline: none;
+}
+
+.tag {
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(22, 33, 62, 0.2);
+}
+
+.filter-btn {
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  border-radius: 20px;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: #16213e; 
+  color: white;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(22, 33, 62, 0.08);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.edit-item {
+  border-radius: 10px;
+  transition: background 0.2s ease, border 0.2s ease, transform 0.15s ease;
+}
+
+.edit-item:hover {
+  background: #f3f5fa;
+  transform: translateX(3px);
+}
+
+.edit-item.editing {
+  border-color: #16213e;
+  background: #eef2f9;
+}
